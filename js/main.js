@@ -3,5 +3,9 @@ window.onload = function (){
 }
 
 function firstTimeLoadingSite(){
-    let typeTasksHere = document.createElement("input").setAttribute("type", "text");
+    let typeTasksHere = document.createElement("input");
+    typeTasksHere.setAttribute("type", "text");
+    typeTasksHere.className = "addTasks";
+
+    document.body.appendChild(typeTasksHere);
 }

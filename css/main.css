@@ -22,3 +22,33 @@ header,
   justify-content: center;
   align-items: center;
 }
+
+.form-container .add-items-input,
+.form-container .add-items-btn {
+  font-size: 1rem;
+}
+.form-container .add-items-input {
+  width: 50%;
+  padding: 5px;
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid black;
+}
+.form-container .add-items-input:focus {
+  outline: none;
+}
+.form-container .add-items-btn {
+  width: 10%;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.form-container .add-items-btn span {
+  display: none;
+}
+.form-container .add-items-btn:hover i {
+  display: none;
+}
+.form-container .add-items-btn:hover span {
+  display: block;
+}

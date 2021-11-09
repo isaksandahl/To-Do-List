@@ -1,3 +1,5 @@
+// colors: green = #107910 , beige = #C7AB7E
+
 body,
 html {
   height: 100vh;
@@ -5,17 +7,19 @@ html {
   font-size: 18px;
 }
 
-// colors: green = #107910 , beige = #C7AB7E
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+// Header styling
+
 header {
   font-size: 2rem;
 }
+
+// Header and form shared styling
 
 header,
 .form-container {
@@ -23,4 +27,42 @@ header,
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+// Form styling
+
+.form-container {
+  // Input and button shared styling
+  .add-items-input,
+  .add-items-btn {
+    font-size: 1rem;
+  }
+  // Input styling
+  .add-items-input {
+    width: 50%;
+    padding: 5px;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid black;
+  }
+  .add-items-input:focus {
+    outline: none;
+  }
+  // Button styling
+  .add-items-btn {
+    width: 10%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    span {
+      display: none;
+    }
+  }
+  // Button hover affect to show span
+  .add-items-btn:hover i {
+    display: none;
+  }
+  .add-items-btn:hover span {
+    display: block;
+  }
 }

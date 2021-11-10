@@ -23,7 +23,7 @@ header {
 
 header,
 .form-container {
-  height: 20vh;
+  height: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,7 +41,6 @@ header,
   .add-items-input {
     width: 50%;
     padding: 5px;
-    text-align: center;
     border: none;
     border-bottom: 2px solid black;
   }
@@ -64,5 +63,61 @@ header,
   }
   .add-items-btn:hover span {
     display: block;
+  }
+}
+
+// Container for tasks
+
+.task-container {
+  background-color: #c7ab7e;
+  height: 70vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ul {
+    width: 90%;
+  }
+  // styling the container for the tasks
+  .list-container {
+    margin: 0.3rem;
+    background-color: #417154;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // styling the buttons for the tasks
+    .checked-btn,
+    .remove-btn {
+      color: white;
+      background: none;
+      border: none;
+      padding: 1rem;
+      cursor: pointer;
+
+      // remove the click effect on the i-icons so you can click them
+      i {
+        pointer-events: none;
+      }
+    }
+    .remove-btn {
+      background-color: #ed0024;
+    }
+
+    // hover effect on buttons
+    .checked-btn:hover {
+      background-color: #305740;
+    }
+    .remove-btn:hover {
+      background-color: #c2001d;
+    }
+    // styling for the list item
+    li {
+      list-style: none;
+      flex-grow: 1;
+      margin: 0rem 0.5rem;
+    }
   }
 }

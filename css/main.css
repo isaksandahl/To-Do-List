@@ -17,7 +17,7 @@ header {
 
 header,
 .form-container {
-  height: 20vh;
+  height: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +30,6 @@ header,
 .form-container .add-items-input {
   width: 50%;
   padding: 5px;
-  text-align: center;
   border: none;
   border-bottom: 2px solid black;
 }
@@ -51,4 +50,52 @@ header,
 }
 .form-container .add-items-btn:hover span {
   display: block;
+}
+
+.task-container {
+  background-color: #c7ab7e;
+  height: 70vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.task-container ul {
+  width: 90%;
+}
+.task-container .list-container {
+  margin: 0.3rem;
+  background-color: #417154;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.task-container .list-container .checked-btn,
+.task-container .list-container .remove-btn {
+  color: white;
+  background: none;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+}
+.task-container .list-container .checked-btn i,
+.task-container .list-container .remove-btn i {
+  pointer-events: none;
+}
+.task-container .list-container .remove-btn {
+  background-color: #ed0024;
+}
+.task-container .list-container .checked-btn:hover {
+  background-color: #305740;
+}
+.task-container .list-container .remove-btn:hover {
+  background-color: #c2001d;
+}
+.task-container .list-container li {
+  list-style: none;
+  flex-grow: 1;
+  margin: 0rem 0.5rem;
 }

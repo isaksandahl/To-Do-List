@@ -57,9 +57,10 @@ header,
   height: 70vh;
   width: 90%;
   margin: auto;
+  padding-top: 2rem;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 .task-container ul {
   width: 90%;

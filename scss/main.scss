@@ -122,3 +122,17 @@ header,
     }
   }
 }
+
+// MEDIA QUERIES
+
+@media all and (min-width: 768px) {
+  .task-container {
+    width: 75%;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .task-container {
+    width: 60%;
+  }
+}

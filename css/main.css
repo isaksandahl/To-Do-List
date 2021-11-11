@@ -100,3 +100,14 @@ header,
   flex-grow: 1;
   margin: 0rem 0.5rem;
 }
+
+@media all and (min-width: 768px) {
+  .task-container {
+    width: 75%;
+  }
+}
+@media all and (min-width: 992px) {
+  .task-container {
+    width: 60%;
+  }
+}

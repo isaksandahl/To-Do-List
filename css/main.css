@@ -54,10 +54,10 @@ header,
 
 .task-container {
   background-color: #c7ab7e;
-  height: 70vh;
   width: 90%;
   margin: auto;
   padding-top: 2rem;
+  padding-bottom: 2rem;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -99,6 +99,11 @@ header,
   list-style: none;
   flex-grow: 1;
   margin: 0rem 0.5rem;
+}
+
+.checked-btn-complete {
+  text-decoration: line-through;
+  opacity: 0.5;
 }
 
 @media all and (min-width: 768px) {

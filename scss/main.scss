@@ -70,10 +70,10 @@ header,
 
 .task-container {
   background-color: #c7ab7e;
-  height: 70vh;
   width: 90%;
   margin: auto;
   padding-top: 2rem;
+  padding-bottom: 2rem;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -121,6 +121,12 @@ header,
       margin: 0rem 0.5rem;
     }
   }
+}
+
+// styling for checked button if task is complete
+.checked-btn-complete {
+  text-decoration: line-through;
+  opacity: 0.5;
 }
 
 // MEDIA QUERIES

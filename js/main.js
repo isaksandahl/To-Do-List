@@ -89,7 +89,9 @@ function createHtml (){
     }
 }
 
-// Eventlistener functions
+//
+// EVENTLISTENERS
+//
 function clickToAdd(e){
     e.preventDefault();
 
